@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultCompletionName</key>
+	<string>MyModule</string>
+	<key>Description</key>
+	<string>VIPER module</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>The name of the class to create</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Name</key>
+			<string>Module name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+	</array>
+	<key>Summary</key>
+	<string>Module following VIPER architecture in Objective-C</string>
+	<key>Definitions</key>
+	<dict>
+    <key>___FILEBASENAME___View.m</key>
+    <dict>
+      <key>Path</key>
+      <string>./___FILEBASENAME___/View/___FILEBASENAME___View.m</string>
+      <key>Group</key>
+        <array>
+          <string>___FILEBASENAME___</string>
+          <string>View</string>
+        </array>
+      <key>PathType</key>
+      <string>Group</string>
+    </dict>
+    <key>trying.png</key>
+	</dict>
+	<key>Nodes</key>
+	<array>
+    <string>___FILEBASENAME___/View/___FILEBASENAME___View.m</string>
+	</array>
+</dict>
+</plist>
