@@ -10,12 +10,12 @@ class VIPERWireFrame: VIPERWireFrameProtocol
     class func presentVIPERModule(fromView view: AnyObject)
     {
         // Generating module components
-        var view: VIPERViewProtocol = VIPERView()
-        var presenter: protocol<VIPERPresenterProtocol, VIPERInteractorOutputProtocol> = VIPERPresenter()
-        var interactor: VIPERInteractorInputProtocol = VIPERInteractor()
-        var APIDataManager: VIPERAPIDataManagerInputProtocol = VIPERAPIDataManager()
-        var localDataManager: VIPERLocalDataManagerInputProtocol = VIPERLocalDataManager()
-        var wireFrame: VIPERWireFrameProtocol = VIPERWireFrame()
+        let view: VIPERViewProtocol = VIPERView()
+        let presenter: VIPERPresenterProtocol & VIPERInteractorOutputProtocol = VIPERPresenter()
+        let interactor: VIPERInteractorInputProtocol = VIPERInteractor()
+        let APIDataManager: VIPERAPIDataManagerInputProtocol = VIPERAPIDataManager()
+        let localDataManager: VIPERLocalDataManagerInputProtocol = VIPERLocalDataManager()
+        let wireFrame: VIPERWireFrameProtocol = VIPERWireFrame()
         
         // Connecting
         view.presenter = presenter
