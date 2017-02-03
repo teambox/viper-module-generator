@@ -19,11 +19,11 @@ Gem::Specification.new do |s|
   s.require_path  = 'lib'
 
   # Dependencies
-  s.add_development_dependency 'rake'
-  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'rake', '~> 0'
+  s.add_development_dependency 'rspec', '~> 0'
   s.add_development_dependency 'bundler', '~> 1.0'
-  s.add_development_dependency 'byebug'
-  s.add_dependency 'thor'
+  s.add_development_dependency 'byebug', '~> 0'
+  s.add_dependency 'thor', '~> 0'
 
   # Executables
   s.executables << 'vipergen'
