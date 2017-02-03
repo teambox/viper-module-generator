@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.summary     = 'Generates XCode VIPER module controllers structure'
   s.email       = 'pedro@redbooth.com'
-  s.homepage    = 'http://github.com/teambox/viper-module-generator'
+  s.homepage    = 'http://github.com/pepibumur/viper-module-generator'
   s.description = 'Based on the objc.io post about VIPER. It saves time in the implementation generating the controllers and adding interactions between them (in Swift or Objective-C)'
   s.authors     = ['Pedro Piñera']
   s.license     = 'MIT'
@@ -19,11 +19,11 @@ Gem::Specification.new do |s|
   s.require_path  = 'lib'
 
   # Dependencies
-  s.add_development_dependency 'rake'
-  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'rake', '~> 0'
+  s.add_development_dependency 'rspec', '~> 0'
   s.add_development_dependency 'bundler', '~> 1.0'
-  s.add_development_dependency 'byebug'
-  s.add_dependency 'thor'
+  s.add_development_dependency 'byebug', '~> 0'
+  s.add_dependency 'thor', '~> 0'
 
   # Executables
   s.executables << 'vipergen'
