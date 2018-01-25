@@ -1,3 +1,4 @@
+require 'FileUtils'
 module Vipergen
 	# File manager class
 	class FileManager
